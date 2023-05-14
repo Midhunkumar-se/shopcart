@@ -81,3 +81,52 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+.demo-users-container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #dddbdb;
+}
+
+.demo-user,
+.demo-admin {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.demo-user > div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.demo-user > div > b {
+  font-size: 14px;
+}
+
+.demo-admin > div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.demo-admin > div > b {
+  font-size: 14px;
+}
+
+.demo-admin > div > p {
+  color: black;
+}
+
+.demo-user > div > p {
+  color: black;
+}

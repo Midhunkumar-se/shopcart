@@ -102,6 +102,24 @@ const Login = () => {
             </p>
           </form>
         </div>
+        <div className="demo-users-container">
+          <div className="demo-admin">
+            <div>
+              <b>Admin Email:</b> <p>admin@gmail.com</p>
+            </div>
+            <div>
+              <b>Admin Password:</b> <p>123456</p>
+            </div>
+          </div>
+          <div className="demo-user">
+            <div>
+              <b>Demo user Email:</b> <p>demo@gmail.com</p>
+            </div>
+            <div>
+              <b>Demo user Password:</b> <p>123456</p>
+            </div>
+          </div>
+        </div>
       </Card>
     </section>
   );
