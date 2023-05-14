@@ -70,3 +70,149 @@ git clone https://github.com/Midhunkumar-se/shopcart.git
 
 
 # Application presentation and flow:
+
+## I - Home Page
+When you visit the Shopcart application, the first page you will directed to the home page of the application.
+<img src="readme-images/2-home/1-home.png">
+
+- If you do not have an account, you will have access to the following pages:
+   * Home page
+   * Cart page
+   * Account menu (with login and register page links)
+   * Login page
+   * Register page
+   * Reset password page."
+- On the home page header, you can see the app logo on the left side and three menus on the far right side - <b>home</b>,<b>cart </b>, and <b>account</b>.
+- If you have an account and logged in to that account, the <b>myOrders</b> option will be displayed and in the account menu <b>login</b> and <b>register</b> will be replaced with <b>resetPassword</b> and <b>logout</b> options, which you will see later in this documentation.
+-Below the menu header, there is a wide banner with text and an image. Below the banner, you will see a list of products. On the left side of the products, you will see filters, and at the top of the list of products, you will see a search input box.
+
+### Filters
+- On the left side of the list of products, you will find filters located below the banner image.
+- When you click the 'Categories' button, you will see a list of categories. After selecting a category, you will be shown a corresponding list of products.
+  <img src="readme-images/2-home/2-home-categories.png" height=60%>
+
+- Below the 'Categories' button, you will find the 'Brand' button, which filters the product list by the specific brand that you select.
+  <img src="readme-images/2-home/3-home-brand.png" height=60%>
+  
+- Below the 'Brand' button, you will find the 'price' range, which filters the product list by the price that you select.
+  <img src="readme-images/2-home/4-home-price.png" height=60%>
+  
+- Below the 'Price' range, you will find the 'sort' button, which filters the product list by the specific sort method that you select.
+  <img src="readme-images/2-home/5-home-sort.png" height=60%>
+  
+- Below the 'sort' button, you will find the 'clear filter' button, which resets all the filter options
+  <img src="readme-images/2-home/6-home-clearFilter.png" height=60%>
+  
+- At the top of the product list, there is a search box where you can search for products by typing their name.
+  <img src="readme-images/2-home/7-home-search.png" height=60%>
+  
+- When you click on the product image listed on the <b>home page</b>, you will be redirected to the corresponding <b>product details page</b>.
+  <img src="readme-images/2-home/8-home-click-product-image.png" height=60%>
+
+## II - Authentication
+
+Since the core application is protected through authentication and authorization,If you click <b>Login</b> link in header menu, you will directed to <b>login</b> page. 
+- If you do not have an account yet,go through registation process or you can use <b>Demo user email and password</b> or <b>Admin email and password</b> which is below "continue with Google" button.
+- And also you can register with your Gmail account.
+- You can reset your password in 'reset password' page
+<kbd>
+  <img alt="Home page" src="readme-images/1-authentication/1-login.png"/>
+  <img alt="Home page" src="readme-images/1-authentication/2-register.png"/>
+  <img alt="Home page" src="readme-images/1-authentication/3-reset-password.png"/>
+</kbd>
+
+## III - Product Details Page.
+The product details page displays all the relevant information about the product, including its name, description, price, and images. You can also add the product to your cart from this page.
+-You can increase and decrease the quantity of the product.
+  
+<img src="readme-images/3-product-details/1-product-details.png" height=60%>  
+  
+- Below the product image, you will find the general specifications of the product. Below that, you can read reviews of the product.
+<img src="readme-images/3-product-details/2-product-details-spec-review.png" height=60%>
+
+## IV - Cart Page. 
+Clicking on the 'Cart' option in the header directs you to the cart page.
+-You can adjust the quantity of a product by increasing or decreasing it. If you no longer want a specific product, you can delete it from your cart. To remove   all items from your cart, click the 'Clear Cart' button.
+- The total cost of the items in your cart is displayed below the items.
+- When you click the checkout button, you will be directed to the checkout page if you have registered and logged in. Otherwise, you will be directed to the login page.
+<img src="readme-images/3-product-details/3-cart.png" height=60%>  
+  
+## V - Checkout Page.
+On the checkout page, you will find three sections: Review Items and Shipping, Order Summary, and Delivery Information.
+- In the 'Review Items and Shipping' section, you can review the items you have added.
+<img src="readme-images/4-checkout-page/1-checkout-page.png" height=60%>
+
+- In the 'Order Summary' section, below the heading, you will see the coupon code input field. The default coupon code is already applied, but you can apply any other code you want.
+- Below the coupon code input field, you will find the 'Payment Details' section, which includes three payment options: Cash on Delivery, UPI, and Debit or Credit Card. You can select whichever option you prefer.
+<img src="readme-images/4-checkout-page/2-checkout-cod.png" height=60%>
+<img src="readme-images/4-checkout-page/3-checkout-upi.png" height=60%>
+<img src="readme-images/4-checkout-page/4-checkout-debtCard.png" height=60%>
+
+- In the 'Delivery Information' section, you will need to enter your delivery address information and save it by clicking the 'Save Information' button.
+- After the address is saved, it will be displayed in a well-formatted manner in the 'Delivery Information' section. You can edit the address at any time by clicking the 'Edit' button.
+<img src="readme-images/4-checkout-page/5-checkout-add-delivery-address.png" height=60%>
+<img src="readme-images/4-checkout-page/6-checkout-delivery-address-Saved.png" height=60%>
+
+- After adding payment details in the 'Payment Details' section, you will see the subtotal, tax amount, coupon discount, shipping cost, and the total amount displayed below.
+- Click the 'pay' button you will be redirected to checkout success page.
+<img src="readme-images/4-checkout-page/7-checkout-add-debt-details.png" height=60%>
+
+- On the checkout success page, you will see a 'View Order Status' button. Clicking this button will redirect you to the 'Orders History' page
+<img src="readme-images/4-checkout-page/8-checkout-success.png" height=60%>
+
+## VI - Orders History Page. 
+On the Order History page, you will see a list of all the orders you have ever made. Clicking on any of the orders will direct you to the details page for that order.
+<img src="readme-images/5-orders/1-orders-history.png" height=60%>
+
+## VII - Order Details Page. 
+On this page, you will see the Order ID, Order Amount, and Order Status, which is updated by the admin to reflect whether the order has been placed, is being processed, has been shipped, or has been delivered. You will also see a list of the products you ordered.
+
+- In the list of products table, each product row has a 'Review Product' button. Clicking this button will direct you to the corresponding product review page, where you can review the product.
+<img src="readme-images/5-orders/2-order-details.png" height=60%>
+
+## VIII - Review Product Page. 
+On this page, you can write a review for the product you ordered and rate it based on your experience with it.
+
+<img src="readme-images/5-orders/3-review-product.png" height=60%>
+
+## IX - Admin Page.
+Only users who are logged in as the admin with the email 'admin@gmail.com' will be able to access the admin pages. 
+
+- When logged in as an admin, you will see an 'Admin' link button in addition to the 'Reset Password' and 'Logout' buttons when you click on the account menu in the header.
+- When you click on Admin link button you will be directed to admin home page.    
+ <img src="readme-images/6-admin/1-admin-account-menu.png" height=60%> 
+ 
+### Admin Home Page
+- On the Admin Home page, you will see the total earnings, total products, and total orders placed by users. Additionally, there is a chat feature for order status statistics.  
+<img src="readme-images/6-admin/2-admin-home.png" height=60%>
+
+### All Products Page
+- On the Admin Home page, you will see all the products that have been added. You can also edit or delete these products.
+<img src="readme-images/6-admin/3-admin-all-products.png" height=60%>
+<img src="readme-images/6-admin/6-admin-edit-product.png" height=60%>
+<img src="readme-images/6-admin/7-admin-delete-product.png" height=60%>
+
+### Add Product Page
+- On this page, the admin can add a new product using the same process as the edit page.
+<img src="readme-images/6-admin/4-admin-add-product.png" height=60%> 
+<img src="readme-images/6-admin/5-add-product-save-btn.png" height=60%>
+
+### Orders Page
+- On the Orders page, you can see all the orders that have been received. By clicking on an order, the admin will be directed to the corresponding order page where they can update the order status. Any changes made to the order status will be reflected on the corresponding user's order page  
+<img src="readme-images/6-admin/8-Admin-orders.png" height=60%> 
+<img src="readme-images/6-admin/9-admin-order-details.png" height=60%> 
+<img src="readme-images/6-admin/10-admin-order-details-status.png" height=60%>
+<img src="readme-images/6-admin/11-admin-order-updated.png" height=60%>
+
+ ##### And that wraps it up ! 
+  
+  ## Author
+
+👤 **Midhun Kumar**
+
+- Linkedin: [@Midhun Kumar](https://www.linkedin.com/in/midhun-kumar-30b108273/)
+- Github: [@Midhun Kumar](https://github.com/Midhunkumar-se)
+
+## Show your support
+
+Please ⭐️ this repository if you liked the project!
