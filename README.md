@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+<br />
+<p align="center"><img src="src/assets/logo/pngegg.png" width='100px'></p>
+  <h1 align="center">Shopcart</h1>
+  <h3 align="center">Shop smart, shop easy, shop now.</h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+  <p align="center">
+    <a href="https://heliosbugtracker.azurewebsites.net/Tracker">View Demo</a>
+  </p>
+</p>
 
-In the project directory, you can run:
+<p align="center">Shopcart is an easy-to-use ecommerce platform where you can browse products, add items to your cart, and view detailed product information. You can also leave reviews to help others make informed purchasing decisions. As an admin, you have the ability to create, edit, and delete items, as well as you can see progress of orders shipment as user and manipulate it as admin.</p>
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- <b>View products:</b> Users can browse all products available on the website.
+- <b>Filter products:</b> Users can filter products by brand, category, price range, and sorting options.
+- <b>Search for products:</b> Users can search for specific products by name.
+- <b>View cart items:</b> Users can view the items they have added to their cart.
+- <b>Checkout:</b> Users can proceed to checkout and add their payment method.
+- <b>View orders:</b> After completing checkout, users can view their orders and order details.
+- <b>Review products:</b> Users can leave reviews for products they have purchased.
+- <b>Add products:</b> Admins can add new products to the website.
+- <b>Edit products:</b> Admins can edit existing product details.
+- <b>Delete products:</b> Admins can delete products from the website.
+- <b>View orders:</b> Admins can view all orders that have been placed on the website.
+- <b>Manipulate order progress:</b> Admins can update the status of orders and track their progress.
+- <b>View order progress chart:</b> Admin can view a chart showing the progress of their order from processing to delivery.
+- <b>Account management:</b> Admin can see their earings and view their order history.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+| Stack    | -                                                                                                                                                                                 | -                                                                                                                                                                           | -                                                                                                | -                                                                                                                | -                                                                                                   |
+| -------- | --------------------------------------------------------------------------------------------------                                                                                | -------------------------------------------------------------------------------------------------                                                                           | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| FrontEnd | <p align="center"><img src="https://i.stack.imgur.com/Mmww2.png" width="100" height="100"> <br />Javascript</p>  | <p align="center"><img src="https://tse3.mm.bing.net/th?id=OIP.J0JE-fKbFT4bxpp8ilPpEQHaHa&pid=Api&P=0" width="100" height="100"> <br />React Js</p>  | <p align="center"><img src="https://tse4.mm.bing.net/th?id=OIP.9U1toerFxB8aiFRreLxEUQHaHa&pid=Api&P=0" width="100" height="100"> <br />Sass</p>   | <p align="center"><img src="https://tse2.mm.bing.net/th?id=OIP.pkfeNyjHH1w7Yqaqijlu3wHaFj&pid=Api&P=0" width="100" height="100"> <br />React Router</p>              | <p align="center"><img src="https://www.chartjs.org/docs/latest/favicon.ico" width="100" height="100"> <br />Chart.Js</p>
+| BackEnd  | <p align="center"><img src="https://tse1.explicit.bing.net/th?id=OIP.HdzDRa1T389o2JpxaPJ6LAHaFj&pid=Api&P=0" width="110" height="100"> <br />Firebase</p>     | <p align="center"><img src="https://tse3.mm.bing.net/th?id=OIP.WJJvF32dGqu3VX7EdPo3vQHaFj&pid=Api&P=0" width="110" height="100"> <br />Cloud Firestore</p> | <p align="center"><img src="https://tse3.mm.bing.net/th?id=OIP.8rR1tKj_ZtPodGUSJ9AiDwHaFj&pid=Api&P=0" width="140" height="100"> <br />Firebase Authentication</p> | <p align="center"><img src="https://tse2.explicit.bing.net/th?id=OIP.c2DYch8OspsEAxoVViXuKwAAAA&pid=Api&P=0" width="100" height="100"> <br />Firebase Cloud Storage</p>               | <p align="center"><img src="https://tse3.mm.bing.net/th?id=OIP.ypz_d6GL7n2nXfQnbw_ARAHaFj&pid=Api&P=0" width="150" height="100"> <br />Vercel</p> |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## :rocket: Quick start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
+ <i>General requirement</i> - <br/>
+  In order for those projects to work, you'll need to have: <br/>
+  <ul>
+  <li>
+    An IDE of your choice, but I'd really recommand Visual Studio code. If you do not own it yet, take a look
+    <a href="https://code.visualstudio.com/"> here </a>.
+  </li>
+  </ul>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Step 1: Clone the repo
+- Either clone the repo or download the app and open the folder in the cli
+- To clone the repo locally by doing -
+```sh
+git clone https://github.com/Midhunkumar-se/shopcart.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Step 2: Install dependencies
+  - Install all dependencies using the `npm install` command
+  - To do so, open your IDE, select the persistence Project and open the terminal, type `npm install` 
 
-### `npm run eject`
+### Step 3: Setup firebase
+- Go to firebase app, create a Firebase project and register your app
+- Install the SDK and initialize Firebase, take a look at the documentation <a href="https://firebase.google.com/docs/web/setup"> here </a>.
+- Don't use my `firebase.js` file, which is inside `src` folder, because my firebase configuration is different from yours, please read the documentation mentioned in 2nd point.
+- Start the web server using the `npm start` command. The app will be served at http://localhost:3000/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### And you are good to go
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Application presentation and flow:
