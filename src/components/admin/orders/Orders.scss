@@ -1,0 +1,93 @@
+.order > h2 {
+  margin-bottom: 10px;
+}
+
+.table {
+  padding: 5px 10px;
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 10px;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.4rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-style: hidden;
+
+    thead {
+      border-bottom: 1px solid #989898;
+      color: #3f3f3f;
+    }
+    thead tr th:first-child {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #f5f2f2;
+      border-top-left-radius: 10px;
+    }
+    thead tr th:last-child {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #f5f2f2;
+      border-top-right-radius: 10px;
+    }
+
+    thead tr th {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #f5f2f2;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    th {
+      border: 1px solid #eee;
+    }
+
+    th,
+    td {
+      vertical-align: top;
+      text-align: left;
+      padding: 8px;
+      &.icons {
+        > * {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    td {
+      cursor: pointer;
+    }
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fff;
+    }
+  }
+}
+
+table tr:last-child {
+  border: 1px solid black;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.pending {
+  color: orangered;
+  border-radius: 10px;
+}
+
+.delivered {
+  color: green;
+}
+
+@media screen and (max-width: "645px") {
+  .disable {
+    display: none;
+  }
+}

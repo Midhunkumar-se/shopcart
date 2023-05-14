@@ -1,0 +1,25 @@
+.info-box-individual {
+  max-width: 300px;
+  width: 100%;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  margin-top: 15px;
+  padding: 10px;
+  box-shadow: 3px 3px 15px #e6e1e1;
+
+  h4 {
+    margin-bottom: 8px;
+  }
+
+  span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  span > p {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}

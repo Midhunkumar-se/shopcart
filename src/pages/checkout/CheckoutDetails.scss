@@ -1,0 +1,116 @@
+.form-checkout {
+  width: 100%;
+
+  form {
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    border: none;
+    padding: 5px 10px;
+    color: rgb(39, 38, 38);
+    background-color: #ccc;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__flex {
+    width: 100%;
+    gap: 8px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .--form-control > label,
+  input {
+    color: black;
+    font-size: 13px;
+  }
+
+  &__select {
+    height: 35px;
+    margin: 2px 0px;
+    border-radius: 3px;
+    border: 2px solid var(--color-light-grey);
+    outline: #464646;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &__full-address {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__full-address > p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #272626;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+
+  &__full-address > div {
+    color: #272626;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: "482px") {
+  .form-checkout__flex {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .form-checkout__flex > .--form-control {
+    width: 100%;
+  }
+
+  .form-checkout__flex > .form-checkout__select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: "814px") {
+  .form-checkout__flex {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .form-checkout__flex > .--form-control {
+    width: 100%;
+  }
+  .form-checkout__flex > .form-checkout__select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: "368px") {
+  .form-checkout__header {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

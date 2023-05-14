@@ -1,0 +1,12 @@
+.admin {
+  display: flex;
+
+  .navbar-wrap {
+    width: 220px;
+    min-height: 90vh;
+  }
+  .content {
+    width: 100%;
+    padding: 1rem;
+  }
+}

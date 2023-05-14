@@ -1,0 +1,83 @@
+.auth {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo > h4 {
+    margin-left: 4px;
+    color: var(--color-green);
+  }
+}
+
+.form {
+  & > h2 {
+    line-height: 2.9rem;
+  }
+  & > .line {
+    width: 30px;
+    border-radius: 5px;
+    height: 3px;
+    background: green;
+    margin-bottom: 17px;
+  }
+  &__btn {
+    margin-top: 12px;
+  }
+
+  &__forgotPassword {
+    color: var(--light-blue);
+    font-size: 13px;
+    transition: all 0.3s;
+    margin-top: 5px;
+  }
+
+  &__forgotPassword:hover {
+    color: blue;
+  }
+
+  &__register-account {
+    color: #6e6f6f;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  &__border-line {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+  }
+
+  &__border-line::before {
+    content: "";
+    flex: 110%;
+    border-top-width: 1px;
+    border-color: #d1d5db;
+    border-top-style: solid;
+  }
+  &__border-line::after {
+    content: "";
+    border-top-style: solid;
+    flex: 110%;
+    border-top-width: 1px;
+    border-color: #d1d5db;
+  }
+  &__border-line > p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #7f8182;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}

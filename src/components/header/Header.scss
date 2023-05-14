@@ -1,0 +1,241 @@
+header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 40;
+}
+
+.coupon-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: var(--color-green);
+  color: #fff;
+  padding: 7px;
+
+  &__phone {
+    color: #fff;
+    font-size: 10px;
+  }
+
+  &__para {
+    color: #fff;
+    font-size: 10px;
+  }
+
+  &__para > a {
+    text-decoration: underline;
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+  &__para > a:hover {
+    color: #9bf1ff;
+  }
+
+  &__select-language {
+    color: #fff;
+    background-color: var(--color-green);
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+    outline-style: none;
+  }
+
+  @media screen and (max-width: "600px") {
+    &__phone,
+    &__select-language {
+      display: none;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  padding: 1.5rem 5rem;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+  }
+  &__logo > h4 {
+    margin-left: 4px;
+    color: var(--color-green);
+  }
+
+  &__menus {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menus-list {
+    display: flex;
+    text-decoration: none;
+    gap: 10px;
+    color: grey;
+  }
+
+  &__menu {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 15px;
+    color: black;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  &__menu:hover {
+    background-color: #e9e8e8;
+  }
+
+  .active-menu {
+    color: black;
+    // background: rgb(183, 182, 182);
+    background: #f1efef;
+    box-shadow: 1px 2px 5px #b5b4b4;
+  }
+}
+
+.cart-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
+  width: 15px;
+  height: 15px;
+  background: black;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 9px;
+  padding: 6px 6px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 75px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 10px 20px;
+  width: 200px;
+  box-shadow: 1px 2px 10px #c7c6c6;
+}
+
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--secondary-bg);
+  transform: rotate(45deg);
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.3s ease;
+  background-color: #fff;
+  color: black;
+}
+
+.dropdown-menu.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 0.3s ease;
+}
+
+.dropdown-menu > h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--primary-text-color);
+  line-height: 2rem;
+}
+
+.dropdown-menu div a {
+  padding: 10px 0;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu div a:hover p {
+  color: rgb(212, 33, 9);
+  cursor: pointer;
+}
+
+.dropdown-menu div a:hover img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.dropdownItem {
+  display: flex;
+  width: 100%;
+  margin: 6px;
+}
+
+.dropdownItem span {
+  display: inline-block;
+  max-width: 20px;
+  margin-right: 10px;
+  font-size: 17px;
+  opacity: 0.5;
+  transition: 500ms;
+}
+
+.dropdownItem p {
+  width: 100%;
+  margin-left: 10px;
+  transition: 500ms;
+}
+
+@media only screen and (max-width: 540px) {
+  .header {
+    // position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    &__logo > h4 {
+      margin-left: 4px;
+      color: var(--color-green);
+    }
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 10px 20px;
+    width: 200px;
+    box-shadow: 1px 2px 10px #c7c6c6;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .header__menus-list {
+    gap: 0px;
+  }
+  .header__menu {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,28 @@
+.search {
+  //   background-color: rgb(233, 232, 232);
+  background-color: #fff;
+  width: 250px;
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  .icon {
+    color: rgb(90, 89, 89);
+  }
+}
+
+.search > input {
+  width: 210px;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  padding: 0px 5px;
+  font-size: 15px;
+}
+
+.search > input::placeholder {
+  color: rgb(124, 123, 123);
+  font-weight: 500;
+  font-size: 13px;
+}

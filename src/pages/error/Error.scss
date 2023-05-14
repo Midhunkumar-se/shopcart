@@ -1,0 +1,31 @@
+.error {
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 370px;
+
+  &__logo-text {
+    font-size: 2rem;
+    color: var(--color-green);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  &__title {
+    margin-top: 15px;
+    color: rgb(246, 9, 9);
+  }
+
+  &__para {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  &__guide {
+    margin-top: 8px;
+  }
+
+  &__guide > a {
+    color: rgb(13, 10, 160);
+    text-decoration: underline;
+  }
+}
