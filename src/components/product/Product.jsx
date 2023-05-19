@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import ProductFilter from "./productFilter/ProductFilter";
 import ProductList from "./productList/ProductList";
 import "./Product.scss";
@@ -14,7 +14,6 @@ import Loader from "../../components/loader/Loader";
 
 const Product = () => {
   const { data, isLoading } = useFetchCollection("products");
-  const [showFilter, setShowFilter] = useState(false);
   const products = useSelector(selectProducts);
   const dispatch = useDispatch();
 
@@ -32,13 +31,12 @@ const Product = () => {
     );
   }, [dispatch, data]);
 
-  const toggleFilter = () => {
-    setShowFilter(!showFilter);
-  };
   return (
     <section>
       <div className="product container">
-        <aside className="filter-aside">{isLoading ? null : <ProductFilter />}</aside>
+        <aside className="filter-aside">
+          {isLoading ? null : <ProductFilter />}
+        </aside>
         <div className="content">
           {isLoading ? <Loader /> : <ProductList products={products} />}
         </div>

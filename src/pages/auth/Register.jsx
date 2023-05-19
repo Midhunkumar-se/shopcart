@@ -81,7 +81,6 @@ const Register = () => {
       navigate("/");
       setIsLoading(false);
     } catch (error) {
-      // toast.error("Something went wrong with the registration");
       toast.error(error.message);
       setIsLoading(false);
     }

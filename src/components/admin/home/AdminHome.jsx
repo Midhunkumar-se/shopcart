@@ -54,6 +54,7 @@ const AdminHome = () => {
           count={`₹${
             totalOrderAmount
               ? totalOrderAmount
+                  .toFixed(2)
                   .toString()
                   .replace(/\B(?=(?:(\d\d)+(\d)(?!\d))+(?!\d))/g, ",")
               : 0
