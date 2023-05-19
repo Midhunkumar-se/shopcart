@@ -116,7 +116,7 @@ Since the core application is protected through authentication and authorization
 - And also you can register with your Gmail account.
 - You can reset your password in 'reset password' page
 <kbd>
-  <img alt="Home page" src="readme-images/1-authentication/1-login.png"/>
+  <img alt="Home page" src="readme-images/1-authentication/login-1.png"/>
   <img alt="Home page" src="readme-images/1-authentication/2-register.png"/>
   <img alt="Home page" src="readme-images/1-authentication/3-reset-password.png"/>
 </kbd>
