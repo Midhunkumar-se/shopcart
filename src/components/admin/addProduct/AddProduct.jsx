@@ -200,6 +200,7 @@ const AddProduct = () => {
                   name="image"
                   multiple={false}
                   onChange={(e) => handleImageChange(e)}
+                  required
                 />
 
                 {product.imageURL === "" ? null : (
