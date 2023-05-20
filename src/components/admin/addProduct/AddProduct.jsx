@@ -198,6 +198,7 @@ const AddProduct = () => {
                   accept="image/*"
                   placeholder="Product Image"
                   name="image"
+                  multiple={false}
                   onChange={(e) => handleImageChange(e)}
                 />
 
