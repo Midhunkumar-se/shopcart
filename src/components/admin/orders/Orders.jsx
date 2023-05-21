@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import useFetchCollection from "../../../customHooks/useFetchCollection";
@@ -9,10 +9,19 @@ import {
 } from "../../../redux/slice/orderSlice";
 import Loader from "../../loader/Loader";
 import "./Orders.scss";
+import Pagination from "../../pagination/Pagination";
 
 const Orders = () => {
   const { data, isLoading } = useFetchCollection("orders");
   const orders = useSelector(selectOrderHistory);
+
+  // Pagination states
+  const [currentPage, setCurrentPage] = useState(1);
+  const [productsPerPage, setProductsPerPage] = useState(10);
+  // Get Current Products
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentOrders = orders.slice(indexOfFirstProduct, indexOfLastProduct);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -42,7 +51,6 @@ const Orders = () => {
               <table>
                 <thead>
                   <tr>
-                    <th>s/n</th>
                     <th>Date</th>
                     <th>Order ID</th>
                     <th>Order Amount</th>
@@ -50,7 +58,7 @@ const Orders = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {orders.map((order, index) => {
+                  {currentOrders.map((order) => {
                     const {
                       id,
                       orderDate,
@@ -60,7 +68,6 @@ const Orders = () => {
                     } = order;
                     return (
                       <tr key={id} onClick={() => handleClick(id)}>
-                        <td>{index + 1}</td>
                         <td>
                           {orderDate} at {orderTime}
                         </td>
@@ -94,6 +101,12 @@ const Orders = () => {
             )}
           </div>
         </>
+        <Pagination
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          productsPerPage={productsPerPage}
+          totalProducts={orders.length}
+        />
       </div>
     </>
   );
