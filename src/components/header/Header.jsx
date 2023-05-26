@@ -90,7 +90,8 @@ const Header = () => {
       <div className="coupon-header">
         <p className="coupon-header__phone">+91 7490 000 0152</p>
         <p className="coupon-header__para">
-          Redeem (GETOFFER) COUPON CODE to get a 15% discount on your purchase
+          Redeem (GETOFFER) COUPON CODE to get a 15% discount{" "}
+          <span className="disable"> on your purchase </span>
           &nbsp;| &nbsp;
           <Link to="/#product"> Shop Now</Link>
         </p>
