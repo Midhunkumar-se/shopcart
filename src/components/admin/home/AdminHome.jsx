@@ -74,7 +74,7 @@ const AdminHome = () => {
           icon={ordersIcon}
         />
       </div>
-      <div>
+      <div className="chart-wrap">
         <Chart />
       </div>
     </div>

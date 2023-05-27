@@ -20,3 +20,12 @@
 .card3 {
   border-bottom: 3px solid orangered;
 }
+
+@media screen and (max-width: 455px) {
+  .chart-wrap {
+    overflow-x: scroll;
+    width: 250px;
+    height: 300px;
+    position: relative;
+  }
+}

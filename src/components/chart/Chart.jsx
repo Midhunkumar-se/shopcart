@@ -26,16 +26,6 @@ const Chart = () => {
   const orders = useSelector(selectOrderHistory);
 
   const options = {
-    scales: {
-      y: {
-        beginAtZero: true,
-        min: 0,
-        max: orders.length,
-        ticks: {
-          stepSize: 1,
-        },
-      },
-    },
     responsive: true,
     plugins: {
       legend: {
