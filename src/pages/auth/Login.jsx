@@ -102,7 +102,7 @@ const Login = () => {
             </p>
           </form>
         </div>
-        <div className="demo-users-container">
+        {/* <div className="demo-users-container">
           <div className="demo-admin">
             <div>
               <b>Admin Email:</b> <p>admin@gmail.com</p>
@@ -119,7 +119,7 @@ const Login = () => {
               <b>Demo user Password:</b> <p>123456</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </Card>
     </section>
   );
