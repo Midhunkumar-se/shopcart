@@ -5,7 +5,7 @@
 
 
   <p align="center">
-    <a href="https://shopcart-midhun.vercel.app/">View Demo</a>
+    <a href="https://shopcart-midhun.vercel.app/" target="_blank">View Demo</a>
   </p>
 </p>
 
